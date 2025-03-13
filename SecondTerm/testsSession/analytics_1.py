@@ -4,6 +4,7 @@ def stats_report(list_of_numbers):
     """
     This function takes a list of numbers and returns a dictionary of statistics.
     """
+    
     stats_dict = {}
     stats_dict['mean'] = np.mean(list_of_numbers)
     stats_dict['median'] = np.median(list_of_numbers)

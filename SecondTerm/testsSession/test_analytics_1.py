@@ -38,5 +38,14 @@ def test_stats_report_with_single_value():
     }
     assert stats_report(data) == expected_output
 
+def test_failing():
+    data = [1, 2, 3, 4, 5]
+    expected_output = {
+        'mean': np.mean(data),
+        'median': np.median(data),
+        'std': np.std(data)
+    }
+    assert stats_report(data) == expected_output
+
 if __name__ == "__main__":
     pytest.main() # This will run the tests in this file, given that you have installed pytest.
